@@ -13,10 +13,10 @@ public class ContractSort implements Comparator<Contract> {
     }
 
     void sortByContractPrice(List<Contract> alist){
-        for(int x = 0; x < alist.size(); x++){
-
+        alist.sort(Comparator.comparing(Contract::getPrice));
+        for(Contract aContract : alist){
+            System.out.println("price is " + aContract.getPrice());
         }
-
     }
 
     @Override

@@ -57,9 +57,11 @@ public class ContractPull {
                 }
             }
             //just for printing purposes
+            /*
             contractHolder.forEach((temp)->{
                 System.out.println(temp);
             });
+             */
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
